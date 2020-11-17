@@ -276,7 +276,7 @@ public final class DropDown: UIView {
 
 	Changing the shadow opacity automatically reloads the drop down.
 	*/
-	@objc public dynamic var shadowOpacity = DPDConstant.UI.Shadow.Opacity {
+	@objc dynamic var shadowOpacity = DPDConstant.UI.Shadow.Opacity {
 		willSet { tableViewContainer.layer.shadowOpacity = newValue }
 		didSet { reloadAllComponents() }
 	}
@@ -286,7 +286,7 @@ public final class DropDown: UIView {
 
 	Changing the shadow radius automatically reloads the drop down.
 	*/
-	@objc public dynamic var shadowRadius = DPDConstant.UI.Shadow.Radius {
+	@objc dynamic var shadowRadius = DPDConstant.UI.Shadow.Radius {
 		willSet { tableViewContainer.layer.shadowRadius = newValue }
 		didSet { reloadAllComponents() }
 	}
